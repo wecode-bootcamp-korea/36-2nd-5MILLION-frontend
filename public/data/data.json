@@ -1,1 +1,171 @@
-{ "data": "data" }
+[
+  {
+    "Monday": [
+      {
+        "id": "1",
+        "quantity": "20",
+        "startTime": "2022-09-05 14:30:00",
+        "endTime": "2022-09-05 15:50:00",
+        "classType": "easy",
+        "instructor": "유병민",
+        "floor": "1F"
+      },
+      {
+        "id": "2",
+        "quantity": "100",
+        "startTime": "2022-09-05 16:20:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F"
+      },
+      {
+        "id": "3",
+        "quantity": "100",
+        "startTime": "2022-09-05 15:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F"
+      },
+      {
+        "id": "4",
+        "quantity": "100",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F"
+      }
+    ],
+    "Tuesday": [
+      {
+        "id": "1",
+        "quantity": "20",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "easy",
+        "instructor": "유병민",
+        "floor": "1F"
+      },
+      {
+        "id": "2",
+        "quantity": "100",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F"
+      }
+    ],
+    "Wednesday": [
+      {
+        "id": "1",
+        "quantity": "20",
+        "startTime": "2022-09-05 16:30:00",
+        "endTime": "2022-09-05 19:50:00",
+        "classType": "easy",
+        "instructor": "유병민",
+        "floor": "1F"
+      },
+      {
+        "id": "2",
+        "quantity": "100",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F"
+      },
+      {
+        "id": "3",
+        "quantity": "100",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F"
+      }
+    ],
+    "Thursday": [
+      {
+        "id": "1",
+        "quantity": "20",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "easy",
+        "instructor": "유병민",
+        "floor": "1F"
+      },
+      {
+        "id": "2",
+        "quantity": "100",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F"
+      }
+    ],
+    "Friday": [
+      {
+        "id": "1",
+        "quantity": "20",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "easy",
+        "instructor": "유병민",
+        "floor": "1F"
+      },
+      {
+        "id": "2",
+        "quantity": "100",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F"
+      }
+    ],
+    "Saturday": [
+      {
+        "id": "1",
+        "quantity": "20",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "easy",
+        "instructor": "유병민",
+        "floor": "1F"
+      },
+      {
+        "id": "2",
+        "quantity": "100",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F"
+      }
+    ],
+    "Sunday": [
+      {
+        "id": "1",
+        "quantity": "20",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "easy",
+        "instructor": "유병민",
+        "floor": "1F"
+      },
+      {
+        "id": "2",
+        "quantity": "100",
+        "startTime": "2022-09-05 17:30:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F"
+      }
+    ]
+  }
+]
