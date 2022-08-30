@@ -7,7 +7,7 @@ export const TitleBox = styled.div`
 `;
 
 export const EngTitle = styled.div`
-  padding-top: 30rem;
+  padding-top: 28rem;
   font-size: ${({ theme }) => theme.style.bigFont};
   text-align: center;
   font-weight: 700;
