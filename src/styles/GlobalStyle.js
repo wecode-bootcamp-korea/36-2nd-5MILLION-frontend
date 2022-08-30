@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
   html {
   font-size: 62.5%; /* 1rem 을 10px로 변환한 코드*/
   }
+  body {
+    background-color: black;
+    color: white;
+  }
   a {
   color: inherit;
   text-decoration: none;
