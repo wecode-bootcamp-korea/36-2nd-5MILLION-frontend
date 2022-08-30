@@ -7,7 +7,7 @@ export const FooterTop = styled.div`
 `;
 
 export const FooterDiv = styled.div`
-  width: 50%;
+  width: 48.5%;
   padding: 7rem;
   border: 0.5px solid white;
   text-align: center;
@@ -20,7 +20,7 @@ export const FooterTitle = styled.div`
 `;
 
 export const FooterUnder = styled.div`
-  width: 100%;
+  width: 97%;
   padding: 10rem;
   color: black;
   background-color: white;

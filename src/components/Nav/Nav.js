@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Nav = () => {
@@ -7,8 +8,12 @@ const Nav = () => {
       <Logo>5M</Logo>
       <SubLogo>STUDIO</SubLogo>
       <NavRight>
-        <Li>INSTRUCTORS</Li>
-        <Li>SCHEDULE</Li>
+        <Link to="/instructor">
+          <Li>INSTRUCTORS</Li>
+        </Link>
+        <Link to="/schedule">
+          <Li>SCHEDULE</Li>
+        </Link>
         <Button>myAccount</Button>
       </NavRight>
     </Container>
@@ -20,7 +25,6 @@ export default Nav;
 const Container = styled.div`
   width: 100vw;
   height: 7vh;
-  background-color: black;
   color: white;
   ${props => props.theme.variables.flex('row', 'space-between')};
 `;
@@ -38,6 +42,7 @@ const SubLogo = styled.span`
   font-weight: 800;
   vertical-align: middle;
   padding-left: 13rem;
+  z-index: 20;
 `;
 
 const NavRight = styled.ul`
@@ -52,14 +57,16 @@ const NavRight = styled.ul`
 
 const Li = styled.li`
   padding-right: 5rem;
+  cursor: pointer;
 `;
 
 const Button = styled.button`
   padding-left: 5rem;
   border: 0px;
   line-height: 24px;
+  background-color: inherit;
   color: rgb(255, 255, 255);
   font-size: 10px;
   font-weight: 800;
-  background-color: black;
+  cursor: pointer;
 `;

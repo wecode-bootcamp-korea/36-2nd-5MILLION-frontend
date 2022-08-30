@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
   }
   a {
   color: inherit;

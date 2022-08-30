@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
-const Modal = ({ toggleModal, content }) => {
+const Modal = ({ toggleModal, content, postBookingData }) => {
   useEffect(() => {
     document.body.style = `overflow: hidden`;
     return () => (document.body.style = `overflow: auto`);
   }, []);
 
   return (
-    <Container onClick={toggleModal}>
+    <Container>
       <ModalContainer>
         <Content>{content}</Content>
         <Box>
@@ -16,7 +16,7 @@ const Modal = ({ toggleModal, content }) => {
             <ModalBtn onClick={toggleModal}>취소</ModalBtn>
           </ModalBtnBox>
           <ModalBtnBox>
-            <ModalBtn onClick={toggleModal}>확인</ModalBtn>
+            <ModalBtn onClick={postBookingData}>확인</ModalBtn>
           </ModalBtnBox>
         </Box>
       </ModalContainer>

@@ -114,7 +114,8 @@ export const DateSubContainer = styled.div``;
 // export const DateUl = styled.ul``;
 
 export const DateLi = styled.li`
-  background-color: black;
+  position: relative;
+
   width: 100%;
 `;
 
@@ -137,6 +138,8 @@ export const ClassList = styled.div`
   padding: 19px 23px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   color: rgb(255, 255, 255);
+  width: 300px;
+  height: 174px;
 `;
 
 export const Location = styled.div`
@@ -204,8 +207,15 @@ export const Level = styled.span`
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background-color: ${({ message }) =>
-      message === 'hard' ? '#c21e01' : ' rgb(148, 194, 227)'};
+    background-color: ${({ message }) => {
+      if (message === 'hard') {
+        return '#c21e01';
+      } else if (message === 'normal') {
+        return 'rgb(57, 197, 60)';
+      } else {
+        return 'rgb(148, 194, 227)';
+      }
+    }};
   }
 `;
 export const Ticket = styled.span`

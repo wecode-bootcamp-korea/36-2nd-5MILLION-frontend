@@ -4,9 +4,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export const Wrapper = styled.div`
-  margin-top: -12rem;
-  width: 100%;
-  height: 107rem;
+  margin-top: -20rem;
+  width: 97%;
+  height: 109rem;
   z-index: -1;
 `;
 

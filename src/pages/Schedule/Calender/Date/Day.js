@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import * as S from '../../StyledSchedule';
 import Class from './Class/Class';
 
-const Day = ({ name, classList, toggleModal, showModal }) => {
+const Day = ({ name, day, classList, toggleModal, showModal }) => {
   return (
     <Container>
       <S.DateLi>
         <S.DateTitle>
-          <S.DateNum>5</S.DateNum>
+          <S.DateNum>{day}</S.DateNum>
           {name}
         </S.DateTitle>
         {classList?.map(classList => (
