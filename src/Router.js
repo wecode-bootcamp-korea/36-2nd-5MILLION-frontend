@@ -4,6 +4,7 @@ import Nav from './components/Nav/Nav';
 import Instructor from './pages/Instructor/Instructor';
 import InstructorDetail from './pages/InstructorDetail/InstructorDetail';
 import Main from './pages/Main/Main';
+import Schedule from './pages/Schedule/Schedule';
 
 const Router = () => {
   return (
@@ -13,6 +14,7 @@ const Router = () => {
         <Route path="/" element={<Main />} />
         <Route path="/instructor" element={<Instructor />} />
         <Route path="/instructorDetail/:id" element={<InstructorDetail />} />
+        <Route path="/schedule" element={<Schedule />} />
       </Routes>
       <Footer />
     </BrowserRouter>
