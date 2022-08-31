@@ -1,0 +1,66 @@
+[
+  {
+    "schedule": "Wednesday September 7, 2022",
+    "time": "7:00 - 8:20 PM",
+    "classes": "2F",
+    "level": "Master",
+    "spot": "86 Spots Left",
+    "deadline": false
+  },
+  {
+    "schedule": "Tuesday September 13, 2022",
+    "time": "8:20 - 9:20 PM",
+    "classes": "1F",
+    "level": "Learner",
+    "spot": "100 Spots Left",
+    "deadline": true
+  },
+  {
+    "schedule": "Wednesday September 7, 2022",
+    "time": "9:20 - 10:20 PM",
+    "classes": "1F",
+    "level": "Master",
+    "spot": "106 Spots Left",
+    "deadline": false
+  },
+  {
+    "schedule": "Wednesday September 7, 2022",
+    "time": "10:20 - 12:20 PM",
+    "classes": "1F",
+    "level": "Learner",
+    "spot": "100 Spots Left",
+    "deadline": true
+  },
+  {
+    "schedule": "Wednesday September 7, 2022",
+    "time": "10:20 - 12:20 PM",
+    "classes": "1F",
+    "level": "Learner",
+    "spot": "100 Spots Left",
+    "deadline": false
+  },
+  {
+    "schedule": "Wednesday September 7, 2022",
+    "time": "10:20 - 12:20 PM",
+    "classes": "1F",
+    "level": "Learner",
+    "spot": "100 Spots Left",
+    "deadline": false
+  },
+  {
+    "schedule": "Wednesday September 7, 2022",
+    "time": "10:20 - 12:20 PM",
+    "classes": "2F",
+    "level": "Learner",
+    "spot": "100 Spots Left",
+    "deadline": true
+  },
+  {
+    "schedule": "Wednesday September 7, 2022",
+    "time": "10:20 - 12:20 PM",
+    "classes": "3F",
+    "level": "Learner",
+    "spot": "100 Spots Left",
+    "deadline": false
+  }
+]
