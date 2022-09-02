@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from '../../../../../components/Modal/Modal';
 import * as S from '../../../StyledSchedule';
 
-const Class = ({ name, classList }) => {
+const Class = ({ classList }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(prev => !prev);
+  };
+
   return (
     <S.ClassList>
       <S.Location>
         seoul, korea
-        <S.BookBtn>BOOK NOW</S.BookBtn>
+        <S.BookBtn
+          isAvailable={classList.deadline}
+          onClick={toggleModal}
+          disabled={!classList.deadline}
+        >
+          {showModal && (
+            <Modal toggleModal={toggleModal} content="예약하시겠습니까?" />
+          )}
+          BOOK NOW
+        </S.BookBtn>
       </S.Location>
       <S.Time>
         {classList.startTime.slice(10)}-{classList.endTime.slice(10)}

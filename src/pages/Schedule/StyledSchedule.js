@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const BigTitle = styled.div`
-  padding-top: 5.0174vw;
-  padding-bottom: 2.9268vw;
+export const BigTitle = styled.h1`
+  padding-top: 5vw;
+  padding-bottom: 3vw;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: ${({ theme }) => theme.style.bigFont};
@@ -128,12 +128,13 @@ export const Location = styled.div`
   line-height: 28px;
   letter-spacing: -0.23px;
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
-export const BookBtn = styled.div`
+export const BookBtn = styled.button`
   width: 10rem;
   height: 2.5rem;
   padding: 5px 5px;
@@ -147,6 +148,7 @@ export const BookBtn = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  opacity: ${({ isAvailable }) => (isAvailable === true ? 1 : 0.2)};
 `;
 
 export const Time = styled.div`

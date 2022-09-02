@@ -8,7 +8,8 @@
         "endTime": "2022-09-05 15:50:00",
         "classType": "easy",
         "instructor": "유병민",
-        "floor": "1F"
+        "floor": "1F",
+        "deadline": true
       },
       {
         "id": "2",
@@ -17,7 +18,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "hard",
         "instructor": "안도현",
-        "floor": "2F"
+        "floor": "2F",
+        "deadline": true
       },
       {
         "id": "3",
@@ -26,7 +28,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "hard",
         "instructor": "안도현",
-        "floor": "2F"
+        "floor": "2F",
+        "deadline": true
       },
       {
         "id": "4",
@@ -35,7 +38,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "hard",
         "instructor": "안도현",
-        "floor": "2F"
+        "floor": "2F",
+        "deadline": true
       }
     ],
     "Tuesday": [
@@ -46,7 +50,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "easy",
         "instructor": "유병민",
-        "floor": "1F"
+        "floor": "1F",
+        "deadline": true
       },
       {
         "id": "2",
@@ -55,7 +60,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "hard",
         "instructor": "안도현",
-        "floor": "2F"
+        "floor": "2F",
+        "deadline": true
       }
     ],
     "Wednesday": [
@@ -66,7 +72,8 @@
         "endTime": "2022-09-05 19:50:00",
         "classType": "easy",
         "instructor": "유병민",
-        "floor": "1F"
+        "floor": "1F",
+        "deadline": true
       },
       {
         "id": "2",
@@ -75,7 +82,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "hard",
         "instructor": "안도현",
-        "floor": "2F"
+        "floor": "2F",
+        "deadline": false
       },
       {
         "id": "3",
@@ -84,7 +92,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "hard",
         "instructor": "안도현",
-        "floor": "2F"
+        "floor": "2F",
+        "deadline": false
       }
     ],
     "Thursday": [
@@ -95,7 +104,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "easy",
         "instructor": "유병민",
-        "floor": "1F"
+        "floor": "1F",
+        "deadline": false
       },
       {
         "id": "2",
@@ -104,7 +114,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "hard",
         "instructor": "안도현",
-        "floor": "2F"
+        "floor": "2F",
+        "deadline": true
       }
     ],
     "Friday": [
@@ -115,7 +126,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "easy",
         "instructor": "유병민",
-        "floor": "1F"
+        "floor": "1F",
+        "deadline": true
       },
       {
         "id": "2",
@@ -124,7 +136,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "hard",
         "instructor": "안도현",
-        "floor": "2F"
+        "floor": "2F",
+        "deadline": true
       }
     ],
     "Saturday": [
@@ -135,7 +148,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "easy",
         "instructor": "유병민",
-        "floor": "1F"
+        "floor": "1F",
+        "deadline": true
       },
       {
         "id": "2",
@@ -144,7 +158,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "hard",
         "instructor": "안도현",
-        "floor": "2F"
+        "floor": "2F",
+        "deadline": true
       }
     ],
     "Sunday": [
@@ -155,7 +170,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "easy",
         "instructor": "유병민",
-        "floor": "1F"
+        "floor": "1F",
+        "deadline": false
       },
       {
         "id": "2",
@@ -164,7 +180,8 @@
         "endTime": "2022-09-05 18:50:00",
         "classType": "hard",
         "instructor": "안도현",
-        "floor": "2F"
+        "floor": "2F",
+        "deadline": false
       }
     ]
   }
