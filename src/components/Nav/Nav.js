@@ -46,7 +46,7 @@ const NavRight = styled.ul`
   font-size: ${props => props.theme.style.smallFont};
   font-weight: 800;
   position: relative;
-  z-index: 20; ;
+  z-index: 20;
 `;
 
 const Li = styled.li`

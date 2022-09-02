@@ -30,7 +30,6 @@ const Class = ({ classList }) => {
       <S.Name>
         <S.Btn>{classList.instructor}</S.Btn>
       </S.Name>
-      <S.Ticket>Tickets Available</S.Ticket>
       <S.Level message={classList.classType}>{classList.classType}</S.Level>
     </S.ClassList>
   );
