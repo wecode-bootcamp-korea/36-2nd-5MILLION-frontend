@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export const Img = styled.img`
-  width: 30rem;
+  width: 40rem;
   border-radius: 50%;
   cursor: pointer;
 `;

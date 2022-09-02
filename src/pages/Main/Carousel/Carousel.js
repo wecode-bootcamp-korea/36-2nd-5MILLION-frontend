@@ -15,8 +15,8 @@ const Carousel = () => {
 
   useEffect(() => {
     const getIamge = async () => {
-      const get = await axios('../data/img/img.json');
-      setImage(get.data);
+      const get = await axios(`http://10.58.4.122:3000/instructors/`);
+      setImage(get.data.instructors);
     };
     getIamge();
   }, []);
@@ -39,9 +39,9 @@ const Carousel = () => {
   return (
     <S.CarouselDiv>
       <S.Carousel {...settings}>
-        {image?.map(({ img, id }, idx) => (
-          <div key={idx}>
-            <S.Img src={img} id={id} onClick={goToDetail} />
+        {image?.map(({ profile_image_url, id }) => (
+          <div key={id}>
+            <S.Img src={profile_image_url} id={id} onClick={goToDetail} />
           </div>
         ))}
       </S.Carousel>
