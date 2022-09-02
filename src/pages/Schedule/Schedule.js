@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import styled from 'styled-components';
+import Dropdown from './Dropdown';
 import Calender from './Calender/Calender';
 import * as S from './StyledSchedule';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import axios from 'axios';
 
 const Schedule = () => {
   const [classList, setClassList] = useState([]);
+  const [filter, setFilter] = useState({
+    Name: '',
+    Level: '',
+  });
+
+  const handleFilter = (e, type) => {
+    setFilter({ ...filter, [type]: e.target.innerText });
+  };
 
   useEffect(() => {
     axios('./data/data.json').then(res => setClassList(res.data[0]));
@@ -22,23 +27,18 @@ const Schedule = () => {
       </S.BigTitle>
       <S.SearchFilterContainer>
         <S.SearchFilter>
-          <S.Box>
-            <S.BoxContainer>Captin Lee</S.BoxContainer>
-            <S.CheckIcon>
-              <StyledFontAwesomeIcon icon={faArrowDown} />
-            </S.CheckIcon>
-          </S.Box>
-          <S.Box>
-            <S.BoxContainer>Easy</S.BoxContainer>
-            <S.CheckIcon>
-              <StyledFontAwesomeIcon icon={faArrowDown} />
-            </S.CheckIcon>
-          </S.Box>
-          <S.Button>CLEAR ALL</S.Button>
-          <S.ScrollIcon>
-            <AwesomeIcon icon={faArrowLeft} />
-            <AwesomeIcon icon={faArrowRight} />
-          </S.ScrollIcon>
+          <Dropdown handleFilter={handleFilter} {...TYPE} type="Name" />
+          <Dropdown handleFilter={handleFilter} {...TYPE} type="Level" />
+          <S.Button
+            onClick={() =>
+              setFilter({
+                Name: '',
+                Level: '',
+              })
+            }
+          >
+            CLEAR ALL
+          </S.Button>
         </S.SearchFilter>
       </S.SearchFilterContainer>
       <Calender classList={classList} />
@@ -53,15 +53,17 @@ const Container = styled.div`
   background-color: black;
 `;
 
-const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  color: white;
-  cursor: pointer;
-  margin-left: 1rem;
-`;
-
-const AwesomeIcon = styled(FontAwesomeIcon)`
-  color: white;
-  font-size: 5rem;
-  cursor: pointer;
-  margin-left: 3rem;
-`;
+const TYPE = {
+  name: [
+    '김준호',
+    '이지현',
+    '이주영',
+    '송경용',
+    '이솔',
+    '유병민',
+    '안도현',
+    '김다현',
+    '문준기',
+  ],
+  level: ['easy', 'normal', 'hard'],
+};

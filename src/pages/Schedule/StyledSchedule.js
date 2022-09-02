@@ -27,10 +27,11 @@ export const SearchFilterContainer = styled.div`
   border-bottom: 0.5px solid rgb(255, 255, 255);
 `;
 
-export const SearchFilter = styled.div``;
+export const SearchFilter = styled.div`
+  display: flex;
+`;
 
 export const Box = styled.div`
-  display: inline-block;
   width: 185px;
   font-size: 18px;
   border-bottom: 0.5px solid white;
@@ -39,26 +40,41 @@ export const Box = styled.div`
   margin-right: 36px;
   position: relative;
   cursor: pointer;
+
+  span {
+    color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 `;
 
-export const BoxContainer = styled.span`
-  color: white;
-`;
+// export const BoxContainer = styled.span`
+//   color: white;
+// `;
 
 export const Button = styled.button`
   border: 0px;
   font-size: 10px;
   font-weight: 600;
   line-height: 13px;
+  height: 20px;
   background-color: black;
   color: white;
   opacity: 0.5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const CheckIcon = styled.div`
   position: absolute;
   right: 1rem;
   bottom: 1rem;
+  ${({ isDropdownClick }) =>
+    isDropdownClick && 'transform: translate(-18px, -20px) rotate(180deg)'};
 `;
 
 export const ScrollIcon = styled.div`
@@ -71,10 +87,9 @@ export const ScrollIcon = styled.div`
 // Calender style
 
 export const MonthContainer = styled.div`
-  position: relative;
   width: 100%;
   height: 105px;
-  padding: 34px 50px;
+  padding: 34px 140px;
   border-bottom: 0.5px solid rgb(255, 255, 255);
   color: white;
   background-color: black;
@@ -195,4 +210,32 @@ export const Level = styled.span`
 export const Ticket = styled.span`
   font-size: 15px;
   padding-right: 3rem;
+`;
+
+export const FilterBox = styled.div`
+  position: absolute;
+  top: 6rem;
+  left: ${({ type }) => (type.toLowerCase() === 'name' ? '5rem' : '27rem')};
+  width: 185px;
+  height: auto;
+  background-color: #e9ecef;
+  opacity: 0.9;
+  z-index: 100;
+`;
+
+export const FilterItem = styled.div`
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: black;
+
+  &:hover {
+    background-color: #bec3c9;
+  }
 `;

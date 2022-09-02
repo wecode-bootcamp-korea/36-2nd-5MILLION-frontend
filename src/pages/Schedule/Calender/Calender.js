@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as S from '../StyledSchedule';
 import Day from './Date/Day';
+import * as S from '../StyledSchedule';
 
 const Calender = ({ classList }) => {
   return (
