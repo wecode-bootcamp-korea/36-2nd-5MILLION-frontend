@@ -1,0 +1,55 @@
+{
+  "Mon": [],
+  "Tue": [
+    {
+      "day": 6,
+      "dayofweek": "Tue",
+      "id": 6,
+      "quantity": 30,
+      "startTime": "05:30",
+      "endTime": "06:50",
+      "classType": "easy",
+      "instructor": "이솔",
+      "bookedCount": "1"
+    },
+    {
+      "day": 6,
+      "dayofweek": "Tue",
+      "id": 8,
+      "quantity": 70,
+      "startTime": "07:00",
+      "endTime": "08:20",
+      "classType": "easy",
+      "instructor": "이솔",
+      "bookedCount": "0"
+    }
+  ],
+  "Wed": [],
+  "Thu": [],
+  "Fri": [
+    {
+      "day": 9,
+      "dayofweek": "Fri",
+      "id": 24,
+      "quantity": 20,
+      "startTime": "07:00",
+      "endTime": "08:20",
+      "classType": "easy",
+      "instructor": "이솔",
+      "bookedCount": "20"
+    },
+    {
+      "day": 9,
+      "dayofweek": "Fri",
+      "id": 25,
+      "quantity": 20,
+      "startTime": "08:30",
+      "endTime": "09:50",
+      "classType": "normal",
+      "instructor": "이솔",
+      "bookedCount": "0"
+    }
+  ],
+  "Sat": [],
+  "Sun": []
+}
