@@ -47,6 +47,7 @@ const ModalContainer = styled.div`
 const Content = styled.p`
   font-size: 3rem;
   margin-bottom: 8rem;
+  color: black;
 `;
 const Box = styled.div`
   display: flex;

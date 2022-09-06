@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import * as S from './StyledSchedule';
-import styled from 'styled-components';
 
 const Dropdown = ({ name, type, level, handleFilter }) => {
   const [isDropdownClick, setIsDropdownClick] = useState(false);

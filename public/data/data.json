@@ -1,6 +1,6 @@
 [
   {
-    "Monday": [
+    "Mon": [
       {
         "id": "1",
         "quantity": "20",
@@ -40,9 +40,29 @@
         "instructor": "안도현",
         "floor": "2F",
         "deadline": true
+      },
+      {
+        "id": "2",
+        "quantity": "100",
+        "startTime": "2022-09-05 16:20:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F",
+        "deadline": true
+      },
+      {
+        "id": "2",
+        "quantity": "100",
+        "startTime": "2022-09-05 16:20:00",
+        "endTime": "2022-09-05 18:50:00",
+        "classType": "hard",
+        "instructor": "안도현",
+        "floor": "2F",
+        "deadline": true
       }
     ],
-    "Tuesday": [
+    "Tue": [
       {
         "id": "1",
         "quantity": "20",
@@ -64,7 +84,7 @@
         "deadline": true
       }
     ],
-    "Wednesday": [
+    "Wed": [
       {
         "id": "1",
         "quantity": "20",
@@ -96,7 +116,7 @@
         "deadline": false
       }
     ],
-    "Thursday": [
+    "Thu": [
       {
         "id": "1",
         "quantity": "20",
@@ -118,7 +138,7 @@
         "deadline": true
       }
     ],
-    "Friday": [
+    "Fri": [
       {
         "id": "1",
         "quantity": "20",
@@ -140,7 +160,7 @@
         "deadline": true
       }
     ],
-    "Saturday": [
+    "Sat": [
       {
         "id": "1",
         "quantity": "20",
@@ -162,7 +182,7 @@
         "deadline": true
       }
     ],
-    "Sunday": [
+    "Sun": [
       {
         "id": "1",
         "quantity": "20",

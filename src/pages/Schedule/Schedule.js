@@ -49,7 +49,8 @@ export default Schedule;
 
 const Container = styled.div`
   width: 100vw;
-  height: inherit;
+  height: auto;
+
   background-color: black;
 `;
 

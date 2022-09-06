@@ -2,13 +2,7 @@ import React, { useState } from 'react';
 import Modal from '../../../../../components/Modal/Modal';
 import * as S from '../../../StyledSchedule';
 
-const Class = ({ classList }) => {
-  const [showModal, setShowModal] = useState(false);
-
-  const toggleModal = () => {
-    setShowModal(prev => !prev);
-  };
-
+const Class = ({ classList, toggleModal, showModal }) => {
   return (
     <S.ClassList>
       <S.Location>
@@ -18,9 +12,6 @@ const Class = ({ classList }) => {
           onClick={toggleModal}
           disabled={!classList.deadline}
         >
-          {showModal && (
-            <Modal toggleModal={toggleModal} content="예약하시겠습니까?" />
-          )}
           BOOK NOW
         </S.BookBtn>
       </S.Location>
