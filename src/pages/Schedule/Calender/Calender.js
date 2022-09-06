@@ -9,7 +9,6 @@ import * as S from '../StyledSchedule';
 
 const Calender = ({ classList }) => {
   const { Mon, Tue, Wed, Thu, Fri, Sat, Sun } = classList;
-
   const [showModal, setShowModal] = useState(false);
   const toggleModal = () => {
     setShowModal(prev => !prev);
@@ -21,13 +20,13 @@ const Calender = ({ classList }) => {
   };
 
   const WEEK_CLASSES = [
-    { id: 1, name: 'Mon', classList: Mon },
-    { id: 2, name: 'Tue', classList: Tue },
-    { id: 3, name: 'Wed', classList: Wed },
-    { id: 4, name: 'Thu', classList: Thu },
-    { id: 5, name: 'Fri', classList: Fri },
-    { id: 6, name: 'Sat', classList: Sat },
-    { id: 7, name: 'Sun', classList: Sun },
+    { id: 1, name: 'Mon', classList: Mon, day: 5 },
+    { id: 2, name: 'Tue', classList: Tue, day: 6 },
+    { id: 3, name: 'Wed', classList: Wed, day: 7 },
+    { id: 4, name: 'Thu', classList: Thu, day: 8 },
+    { id: 5, name: 'Fri', classList: Fri, day: 9 },
+    { id: 6, name: 'Sat', classList: Sat, day: 10 },
+    { id: 7, name: 'Sun', classList: Sun, day: 11 },
   ];
 
   return (
@@ -41,6 +40,7 @@ const Calender = ({ classList }) => {
                 <Day
                   key={el.id}
                   name={el.name}
+                  day={el.day}
                   classList={el.classList}
                   toggleModal={toggleModal}
                   showModal={showModal}
@@ -61,6 +61,8 @@ export default Calender;
 
 const Container = styled.div`
   width: 100%;
+  padding-bottom: 5rem;
+  position: relative;
 `;
 
 export const Carousel = styled(Slider)`

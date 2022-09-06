@@ -17,8 +17,14 @@ const Schedule = () => {
   };
 
   useEffect(() => {
-    axios('./data/data.json').then(res => setClassList(res.data[0]));
-  }, []);
+    const testData = async () => {
+      const res = await axios.get(
+        `http://10.58.5.244:3001/schedule?instructor=${filter.Name}&classType=${filter.Level}`
+      );
+      setClassList(res.data);
+    };
+    testData();
+  }, [filter]);
 
   return (
     <Container>
@@ -27,8 +33,18 @@ const Schedule = () => {
       </S.BigTitle>
       <S.SearchFilterContainer>
         <S.SearchFilter>
-          <Dropdown handleFilter={handleFilter} {...TYPE} type="Name" />
-          <Dropdown handleFilter={handleFilter} {...TYPE} type="Level" />
+          <Dropdown
+            handleFilter={handleFilter}
+            filter={filter}
+            {...TYPE}
+            type="Name"
+          />
+          <Dropdown
+            handleFilter={handleFilter}
+            filter={filter}
+            {...TYPE}
+            type="Level"
+          />
           <S.Button
             onClick={() =>
               setFilter({

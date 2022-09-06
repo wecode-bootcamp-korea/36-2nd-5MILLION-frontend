@@ -8,7 +8,7 @@ const Modal = ({ toggleModal, content }) => {
   }, []);
 
   return (
-    <Container onClick={toggleModal}>
+    <Container>
       <ModalContainer>
         <Content>{content}</Content>
         <Box>
