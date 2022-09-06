@@ -95,18 +95,19 @@ export const MonthContainer = styled.div`
   background-color: black;
   font-size: 2.6rem;
   font-weight: 800;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const DateContainer = styled.div`
-  width: 1340px;
+  width: 1500px;
   margin: 0 auto;
-  overflow-x: scroll;
+  overflow: hidden;
 `;
 
-export const DateSubContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-`;
+export const DateSubContainer = styled.div``;
 
 //Date
 

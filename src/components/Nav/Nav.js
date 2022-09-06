@@ -30,6 +30,7 @@ const Logo = styled.h1`
   padding-left: 3rem;
   position: fixed;
   left: 3rem;
+  z-index: 10000;
 `;
 
 const SubLogo = styled.span`
