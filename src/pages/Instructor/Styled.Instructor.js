@@ -18,7 +18,7 @@ export const SubTitle = styled.div`
 export const InstructorFlex = styled.div`
   ${variables.flex('row', 'flex-start', 'stretch')}
   flex-wrap: wrap;
-  width: 95%;
+  width: 100%;
   /* 병합시 디자인에 따라 수정 */
   margin: 0 auto;
 `;

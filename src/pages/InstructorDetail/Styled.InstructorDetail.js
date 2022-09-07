@@ -42,7 +42,7 @@ export const ClassTitle = styled.div`
 `;
 
 export const ScheduleBox = styled.div`
-  width: 100%;
+  width: 95%;
   margin-top: 10rem;
   border-top: 2px solid white;
 `;

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import axios from 'axios';
 import * as S from './Styled.Carousel';
+import { API } from '../../../config';
 
 const Carousel = () => {
   const [image, setImage] = useState();
@@ -15,7 +16,7 @@ const Carousel = () => {
 
   useEffect(() => {
     const getIamge = async () => {
-      const get = await axios(`http://10.58.4.122:3000/instructors/`);
+      const get = await axios(`${API.MAIN}/instructors`);
       setImage(get.data.instructors);
     };
     getIamge();

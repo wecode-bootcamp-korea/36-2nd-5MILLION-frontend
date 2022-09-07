@@ -11,7 +11,7 @@ export const FixedMenuBar = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  width: 6.5rem;
+  width: 8.5rem;
   height: 100vh;
   border-left: 0.1rem solid white;
   background-color: black;

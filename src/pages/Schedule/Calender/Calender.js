@@ -5,13 +5,13 @@ import Slider from 'react-slick';
 import Modal from '../../../components/Modal/Modal';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { API } from '../../../config';
 import * as S from '../StyledSchedule';
 
 const Calender = ({ classList }) => {
   const { Mon, Tue, Wed, Thu, Fri, Sat, Sun } = classList;
   const [showModal, setShowModal] = useState(false);
   const [storeId, setStoreId] = useState('');
-
   const toggleModal = e => {
     setShowModal(prev => !prev);
     setStoreId(e.target.id);
@@ -33,7 +33,7 @@ const Calender = ({ classList }) => {
   ];
 
   const postBookingData = () => {
-    fetch(`http://10.58.5.244:3000/class/${storeId}`, {
+    fetch(`${API.MAIN}/class/${storeId}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

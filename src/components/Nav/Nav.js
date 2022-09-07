@@ -1,11 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Nav = () => {
+  const navigate = useNavigate();
+  const goToMain = () => {
+    navigate('/');
+    window.scrollTo(0, 0);
+  };
   return (
     <Container>
-      <Logo>5M</Logo>
+      <Logo onClick={goToMain}>5M</Logo>
       <SubLogo>STUDIO</SubLogo>
       <NavRight>
         <Link to="/instructor">
@@ -35,6 +40,7 @@ const Logo = styled.h1`
   position: fixed;
   left: 3rem;
   z-index: 10000;
+  cursor: pointer;
 `;
 
 const SubLogo = styled.span`

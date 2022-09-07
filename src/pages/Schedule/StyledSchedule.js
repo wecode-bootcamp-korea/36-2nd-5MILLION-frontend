@@ -50,10 +50,6 @@ export const Box = styled.div`
   }
 `;
 
-// export const BoxContainer = styled.span`
-//   color: white;
-// `;
-
 export const Button = styled.button`
   border: 0px;
   font-size: 10px;
@@ -67,6 +63,7 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
 `;
 
 export const CheckIcon = styled.div`
@@ -83,8 +80,6 @@ export const ScrollIcon = styled.div`
   right: 12rem;
   bottom: 3rem;
 `;
-
-// Calender style
 
 export const MonthContainer = styled.div`
   width: 100%;
@@ -108,10 +103,6 @@ export const DateContainer = styled.div`
 `;
 
 export const DateSubContainer = styled.div``;
-
-//Date
-
-// export const DateUl = styled.ul``;
 
 export const DateLi = styled.li`
   position: relative;
