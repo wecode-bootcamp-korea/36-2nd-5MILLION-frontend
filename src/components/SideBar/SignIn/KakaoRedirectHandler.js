@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { REDIRECT_URI } from './OAuth';
+
 const KakaoRedirectHandler = () => {
   const navigate = useNavigate();
   const code = new URL(window.location.href).searchParams.get('code');
@@ -11,6 +12,7 @@ const KakaoRedirectHandler = () => {
       'Content-type': 'application/x-www-form-urlencoded;charset=utf-8',
     },
   };
+
   useEffect(() => {
     fetch(requestURL, requestHeaders)
       .then(response => response.json())
