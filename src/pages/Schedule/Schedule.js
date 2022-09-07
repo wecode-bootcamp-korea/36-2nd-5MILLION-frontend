@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Dropdown from './Dropdown';
 import Calender from './Calender/Calender';
 import * as S from './StyledSchedule';
+import { API } from '../../config';
 
 const Schedule = () => {
   const [classList, setClassList] = useState([]);
@@ -19,7 +20,7 @@ const Schedule = () => {
   useEffect(() => {
     const testData = async () => {
       const res = await axios.get(
-        `http://10.58.5.244:3001/schedule?instructor=${filter.Name}&classType=${filter.Level}`
+        `${API.SCHEDULE}?instructor=${filter.Name}&classType=${filter.Level}`
       );
       setClassList(res.data);
     };

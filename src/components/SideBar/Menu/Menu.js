@@ -20,10 +20,10 @@ const Menu = ({ setShowMode, checkedLogin }) => {
         <S.Login onClick={handleAuth}>{checkedLogin}</S.Login>
       </li>
       <li>
-        <Link to="/">INSTRUCTORS</Link>
+        <Link to="/instructor">INSTRUCTORS</Link>
       </li>
       <li>
-        <Link to="/">SCHEDULE</Link>
+        <Link to="/schedule">SCHEDULE</Link>
       </li>
       <li>
         <Link to="/">ABOUT US</Link>

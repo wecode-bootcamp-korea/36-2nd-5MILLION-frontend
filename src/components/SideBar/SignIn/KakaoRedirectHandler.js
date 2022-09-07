@@ -1,19 +1,17 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import { REDIRECT_URI, CLIENT_ID } from './OAuth';
-
+import { REDIRECT_URI } from './OAuth';
 const KakaoRedirectHandler = () => {
   const navigate = useNavigate();
+  const code = new URL(window.location.href).searchParams.get('code');
+  const requestURL = `https://kauth.kakao.com/oauth/token?grant_type=authorization_code&client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${REDIRECT_URI}&code=${code}`;
+  const requestHeaders = {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/x-www-form-urlencoded;charset=utf-8',
+    },
+  };
   useEffect(() => {
-    const code = new URL(window.location.href).searchParams.get('code');
-    const requestURL = `https://kauth.kakao.com/oauth/token?grant_type=authorization_code&client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&code=${code}`;
-    const requestHeaders = {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/x-www-form-urlencoded;charset=utf-8',
-      },
-    };
-
     fetch(requestURL, requestHeaders)
       .then(response => response.json())
       .then(data => {
@@ -35,8 +33,6 @@ const KakaoRedirectHandler = () => {
           });
       });
   });
-
   return <div>로그인 중입니다.</div>;
 };
-
 export default KakaoRedirectHandler;

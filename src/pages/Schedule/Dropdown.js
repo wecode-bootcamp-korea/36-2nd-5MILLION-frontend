@@ -4,9 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import * as S from './StyledSchedule';
 
-const Dropdown = ({ name, type, level, handleFilter, filter }) => {
+const Dropdown = ({ name, type, level, handleFilter }) => {
   const [isDropdownClick, setIsDropdownClick] = useState(false);
-
   const dropdownClicked = () => {
     setIsDropdownClick(prev => !prev);
   };

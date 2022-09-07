@@ -1,7 +1,11 @@
 import * as S from './Styled.ScheduleBox';
 
-const ScheduleBox = ({ oneSchedule }) => {
+const ScheduleBox = ({ oneSchedule, setDetailToggle, setBooking }) => {
   const scheduleList = [];
+  const isOpenModal = e => {
+    setDetailToggle(true);
+    setBooking(e.target.id);
+  };
 
   oneSchedule?.map(
     ({
@@ -13,6 +17,7 @@ const ScheduleBox = ({ oneSchedule }) => {
       classType,
       bookedCount,
       quantity,
+      id,
     }) =>
       scheduleList.push({
         dayofweek,
@@ -23,12 +28,22 @@ const ScheduleBox = ({ oneSchedule }) => {
         classType,
         bookedCount,
         quantity,
+        id,
       })
   );
 
   return scheduleList.map(
     (
-      { dayofweek, day, startTime, endTime, classType, quantity, bookedCount },
+      {
+        dayofweek,
+        day,
+        startTime,
+        endTime,
+        classType,
+        quantity,
+        bookedCount,
+        id,
+      },
       idx
     ) => {
       const spots = quantity - Number(bookedCount);
@@ -45,7 +60,9 @@ const ScheduleBox = ({ oneSchedule }) => {
           </div>
           <div>{classTypes}</div>
           <div>{`${spots} Spots Left`}</div>
-          <S.BookNow disabled={deadline}>BOOK NOW</S.BookNow>
+          <S.BookNow id={id} disabled={deadline} onClick={isOpenModal}>
+            BOOK NOW
+          </S.BookNow>
         </S.Wrapper>
       );
     }

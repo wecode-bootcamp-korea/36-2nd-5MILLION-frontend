@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { API } from '../../config';
 import * as S from './Styled.Instructor';
 
 const Instructor = () => {
@@ -8,7 +9,7 @@ const Instructor = () => {
 
   useEffect(() => {
     const getInstructor = async () => {
-      const gets = await axios('http://10.58.4.122:3000/instructors');
+      const gets = await axios(API.INSTRUCTOR);
       setInstructorList(gets.data.instructors);
     };
     getInstructor();

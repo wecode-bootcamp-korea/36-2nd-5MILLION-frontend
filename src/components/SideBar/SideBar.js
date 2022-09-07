@@ -4,6 +4,7 @@ import Menu from './Menu/Menu';
 import SignIn from './SignIn/SignIn';
 import KakaoRedirectHandler from './SignIn/KakaoRedirectHandler';
 import MyAccount from './MyAccount/MyAccount';
+import { API } from '../../config';
 
 const SideBar = () => {
   const userMenu = useRef(null);
@@ -42,7 +43,7 @@ const SideBar = () => {
   };
 
   useEffect(() => {
-    fetch('http://10.58.5.244:3000/account/class', {
+    fetch(`${API.MAIN}/account/class`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -51,7 +52,7 @@ const SideBar = () => {
     })
       .then(res => res.json())
       .then(data => setTicket(data.bookClasses));
-  }, []);
+  });
 
   useEffect(() => {
     window.addEventListener('click', e => HandleModalClose(e));
