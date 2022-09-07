@@ -12,6 +12,7 @@ const Calender = ({ classList }) => {
   const { Mon, Tue, Wed, Thu, Fri, Sat, Sun } = classList;
   const [showModal, setShowModal] = useState(false);
   const [storeId, setStoreId] = useState('');
+
   const toggleModal = e => {
     setShowModal(prev => !prev);
     setStoreId(e.target.id);
@@ -33,11 +34,12 @@ const Calender = ({ classList }) => {
   ];
 
   const postBookingData = () => {
+    setShowModal(false);
     fetch(`${API.MAIN}/class/${storeId}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${localStorage.getItem('token')}`,
+        Authorization: `Bearer ${JSON.parse(localStorage.getItem('token'))}`,
       },
     }).then(data => {
       if (data.status === 400) {

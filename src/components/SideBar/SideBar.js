@@ -47,12 +47,12 @@ const SideBar = () => {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${localStorage.getItem('token')}`,
+        Authorization: `Bearer ${JSON.parse(localStorage.getItem('token'))}`,
       },
     })
       .then(res => res.json())
-      .then(data => setTicket(data.bookClasses));
-  });
+      .then(data => setTicket(data.bookedClasses));
+  }, []);
 
   useEffect(() => {
     window.addEventListener('click', e => HandleModalClose(e));
