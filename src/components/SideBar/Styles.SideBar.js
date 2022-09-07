@@ -56,6 +56,7 @@ export const ShowUpMenuBody = styled.div`
   height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
+
   &::-webkit-scrollbar {
     display: none;
   }

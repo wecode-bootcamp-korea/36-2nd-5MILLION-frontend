@@ -1,6 +1,5 @@
 import React from 'react';
 import * as S from './Styles.MyAccount';
-import * as A from '../../../pages/Schedule/StyledSchedule';
 
 const MyAccount = ({ ticket, setShowMode }) => {
   return (
@@ -23,17 +22,17 @@ const MyAccount = ({ ticket, setShowMode }) => {
           ) => (
             <S.Container key={idx}>
               <S.BooklistWrapper>
-                <A.ClassList>
-                  <A.Location>예정된 수업</A.Location>
-                  <A.Name>
+                <S.ClassList>
+                  <S.Location>예정된 수업</S.Location>
+                  <S.Name>
                     <S.TicketImg src={profileImage} />
-                    <A.Btn>{instructor}</A.Btn>
-                    <A.Location>
+                    <S.Btn>{instructor}</S.Btn>
+                    <S.Location>
                       {startTime} ~ {endTime}
-                    </A.Location>
-                  </A.Name>
-                  <A.Level>{classType}</A.Level>
-                </A.ClassList>
+                    </S.Location>
+                  </S.Name>
+                  <S.Level>{classType}</S.Level>
+                </S.ClassList>
               </S.BooklistWrapper>
             </S.Container>
           )
