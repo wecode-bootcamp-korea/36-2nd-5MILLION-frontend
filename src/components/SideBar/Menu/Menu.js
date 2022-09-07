@@ -19,17 +19,21 @@ const Menu = ({ setShowMode, checkedLogin }) => {
       <li>
         <S.Login onClick={handleAuth}>{checkedLogin}</S.Login>
       </li>
-      <li>
-        <Link to="/instructor">INSTRUCTORS</Link>
-      </li>
-      <li>
-        <Link to="/schedule">SCHEDULE</Link>
-      </li>
-      <li>
-        <Link to="/">ABOUT US</Link>
-      </li>
+      {MENU_LIST.map(({ link, title }, idx) => {
+        return (
+          <li key={idx}>
+            <Link to={link}>{title}</Link>
+          </li>
+        );
+      })}
     </S.Menu>
   );
 };
 
 export default Menu;
+
+const MENU_LIST = [
+  { link: '/instructor', title: 'INSTRUCTORS' },
+  { link: '/schedule', title: 'SCHEDULE' },
+  { link: '/', title: 'ABOUT US' },
+];

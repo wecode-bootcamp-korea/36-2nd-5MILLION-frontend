@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import * as S from './Styles.SideBar';
 import Menu from './Menu/Menu';
 import SignIn from './SignIn/SignIn';
 import KakaoRedirectHandler from './SignIn/KakaoRedirectHandler';
 import MyAccount from './MyAccount/MyAccount';
 import { API } from '../../config';
+import * as S from './Styles.SideBar';
 
 const SideBar = () => {
   const userMenu = useRef(null);

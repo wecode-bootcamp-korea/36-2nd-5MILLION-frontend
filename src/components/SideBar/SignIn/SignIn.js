@@ -1,6 +1,6 @@
 import React from 'react';
-import * as S from './Styles.SignIn';
 import { KAKAO_AUTH_URL } from './OAuth';
+import * as S from './Styles.SignIn';
 
 const SignIn = () => {
   return (
