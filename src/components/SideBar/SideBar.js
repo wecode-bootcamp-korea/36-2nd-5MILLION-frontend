@@ -30,6 +30,17 @@ const SideBar = () => {
     KakaoRedirectHandler();
   };
 
+  // 삭제 구현 확인
+  const DeletedTicket = e => {
+    fetch(`http://127.0.0.1:3031/account/class/${e.target.id}`, {
+      method: 'DELETE',
+    }).then(res => {
+      if (res.status === 200) {
+        alert('예약이 취소되었습니다.');
+      }
+    });
+  };
+
   const sideMenu = {
     menu: (
       <Menu
@@ -39,7 +50,13 @@ const SideBar = () => {
       />
     ),
     signin: <SignIn goToAccount={goToAccount} />,
-    myaccount: <MyAccount setShowMode={setShowMode} ticket={ticket} />,
+    myaccount: (
+      <MyAccount
+        DeletedTicket={DeletedTicket}
+        setShowMode={setShowMode}
+        ticket={ticket}
+      />
+    ),
   };
 
   useEffect(() => {
@@ -52,7 +69,7 @@ const SideBar = () => {
     })
       .then(res => res.json())
       .then(data => setTicket(data.bookedClasses));
-  }, []);
+  }, [isOpen]);
 
   useEffect(() => {
     window.addEventListener('click', e => HandleModalClose(e));

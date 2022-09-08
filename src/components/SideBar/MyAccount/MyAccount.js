@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './Styles.MyAccount';
 
-const MyAccount = ({ ticket, setShowMode }) => {
+const MyAccount = ({ ticket, setShowMode, DeletedTicket }) => {
   return (
     <>
       <S.Account>
@@ -17,13 +17,17 @@ const MyAccount = ({ ticket, setShowMode }) => {
       {ticket?.length > 0 &&
         ticket?.map(
           (
-            { profileImage, instructor, startTime, endTime, classType },
+            { profileImage, instructor, startTime, endTime, classType, id },
             idx
           ) => (
             <S.Container key={idx}>
               <S.BooklistWrapper>
                 <S.ClassList>
                   <S.Location>예정된 수업</S.Location>
+                  {/* 삭제 버튼 확인 */}
+                  <S.DelBtn id={id} onClick={DeletedTicket}>
+                    취소
+                  </S.DelBtn>
                   <S.Name>
                     <S.TicketImg src={profileImage} />
                     <S.Btn>{instructor}</S.Btn>

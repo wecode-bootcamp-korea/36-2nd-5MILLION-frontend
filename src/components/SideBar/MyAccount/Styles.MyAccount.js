@@ -110,3 +110,7 @@ export const Level = styled.span`
     }};
   }
 `;
+
+export const DelBtn = styled.button`
+  height: 5rem;
+`;

@@ -7,6 +7,7 @@ import * as S from './StyledSchedule';
 import { API } from '../../config';
 
 const Schedule = () => {
+  window.scrollTo(0, 0);
   const [classList, setClassList] = useState([]);
   const [filter, setFilter] = useState({
     Name: '',
@@ -30,7 +31,7 @@ const Schedule = () => {
   return (
     <Container>
       <S.BigTitle>
-        Schedule<S.SmallTitle>스케줄 - Seoul, Korea</S.SmallTitle>
+        SCHEDULE<S.SmallTitle>스케줄 - Seoul, Korea</S.SmallTitle>
       </S.BigTitle>
       <S.SearchFilterContainer>
         <S.SearchFilter>
