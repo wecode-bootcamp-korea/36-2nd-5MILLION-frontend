@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import * as S from './Styles.Menu';
 
-const Menu = ({ setShowMode, checkedLogin }) => {
+const Menu = ({ setShowMode, checkedLogin, setOpen }) => {
   const goToSignIn = e => {
     e.stopPropagation();
     setShowMode('signin');
@@ -22,7 +22,9 @@ const Menu = ({ setShowMode, checkedLogin }) => {
       {MENU_LIST.map(({ link, title }, idx) => {
         return (
           <li key={idx}>
-            <Link to={link}>{title}</Link>
+            <Link to={link} onClick={() => setOpen(false)}>
+              {title}
+            </Link>
           </li>
         );
       })}
