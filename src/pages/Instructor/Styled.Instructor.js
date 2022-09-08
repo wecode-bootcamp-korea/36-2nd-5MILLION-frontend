@@ -3,15 +3,18 @@ import variables from '../../styles/variable';
 
 const COLOR = ['skyblue', 'red', 'yellow'];
 export const InstructorTitle = styled.div`
+  margin-top: 6vw;
+  margin-bottom: 2vw;
   font-size: ${({ theme }) => theme.style.bigFont};
-  font-weight: 800;
+  font-weight: 900;
   text-align: center;
 `;
 
 export const SubTitle = styled.div`
-  margin: 5rem 0;
-  font-size: ${({ theme }) => theme.style.smallFont};
-  font-weight: 800;
+  margin-top: 2.5rem;
+  margin-bottom: 3vw;
+  font-size: 1.9rem;
+  font-weight: 400;
   text-align: center;
 `;
 
@@ -21,12 +24,13 @@ export const InstructorFlex = styled.div`
   width: 100%;
   /* 병합시 디자인에 따라 수정 */
   margin: 0 auto;
+  margin-left: 7.5rem;
 `;
 
 export const Square = styled.div`
   position: relative;
-  width: 55rem;
-  height: 55rem;
+  width: 50rem;
+  height: 50rem;
   border: 1px solid white;
 `;
 
@@ -38,11 +42,12 @@ export const ImgBox = styled.div`
     background-color: ${({ color }) => COLOR[color % 3]};
   }
 `;
-
+//33
 export const Img = styled.img`
   position: absolute;
-  top: 0;
-  height: 40rem;
+  top: 2rem;
+  left: 1rem;
+  height: 33rem;
   margin: 7.4rem;
   border-radius: 50%;
   z-index: 100;
@@ -50,9 +55,9 @@ export const Img = styled.img`
   &:hover {
     transition-timing-function: 0.6s;
     overflow: hidden;
-    top: -6rem;
-    left: -5rem;
-    height: 50rem;
+    top: -4rem;
+    left: -2rem;
+    height: 40rem;
   }
 `;
 
@@ -67,8 +72,9 @@ export const TestBox = styled.div`
 `;
 
 export const TestLine = styled.div`
-  width: 16.4rem;
+  width: 23.5rem;
   padding-top: 3rem;
+  padding-left: 2rem;
   border-top: 1px solid white;
   font-size: ${({ theme }) => theme.style.middleFont};
   text-align: center;

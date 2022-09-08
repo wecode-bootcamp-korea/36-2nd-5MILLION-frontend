@@ -5,13 +5,19 @@ const Class = ({ classList, toggleModal }) => {
   const spots = classList.quantity - Number(classList.bookedCount);
   const deadline = spots === 0 ? false : true;
 
+  const canOpenModal = () => {
+    if (localStorage.getItem('token')) {
+      toggleModal();
+    } else alert('로그인이 필요합니다.');
+  };
+
   return (
     <S.ClassList>
       <S.Location>
         seoul, korea
         <S.BookBtn
           isAvailable={deadline}
-          onClick={toggleModal}
+          onClick={canOpenModal}
           disabled={!deadline}
           id={classList.id}
         >

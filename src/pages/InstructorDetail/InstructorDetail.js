@@ -7,6 +7,7 @@ import * as S from './Styled.InstructorDetail';
 import { API } from '../../config';
 
 const InstructorDetail = () => {
+  window.scrollTo(0, 0);
   const [instructor, setInstructor] = useState([]);
   const [showSchedule, setShowSkedule] = useState({});
   const [detailToggle, setDetailToggle] = useState(false);

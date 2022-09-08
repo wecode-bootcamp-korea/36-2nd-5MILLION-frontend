@@ -3,8 +3,12 @@ import * as S from './Styled.ScheduleBox';
 const ScheduleBox = ({ oneSchedule, setDetailToggle, setBooking }) => {
   const scheduleList = [];
   const isOpenModal = e => {
-    setDetailToggle(true);
-    setBooking(e.target.id);
+    if (localStorage.getItem('token')) {
+      setDetailToggle(true);
+      setBooking(e.target.id);
+    } else {
+      alert('로그인이 필요합니다.');
+    }
   };
 
   oneSchedule?.map(

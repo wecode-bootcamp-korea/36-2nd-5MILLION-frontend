@@ -40,7 +40,7 @@ export const ShowUpMenu = styled.div`
   position: fixed;
   top: 0px;
   height: 100%;
-  z-index: 30;
+  z-index: 200;
   background-color: black;
   transition: all 0.7s;
 `;

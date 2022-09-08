@@ -5,6 +5,7 @@ import { API } from '../../config';
 import * as S from './Styled.Instructor';
 
 const Instructor = () => {
+  window.scrollTo(0, 0);
   const [instructorList, setInstructorList] = useState();
 
   useEffect(() => {
