@@ -25,9 +25,9 @@ const MyAccount = ({ ticket, setShowMode, DeletedTicket }) => {
                 <S.ClassList>
                   <S.Location>예정된 수업</S.Location>
                   {/* 삭제 버튼 확인 */}
-                  <S.DelBtn id={id} onClick={DeletedTicket}>
+                  {/* <S.DelBtn id={id} onClick={DeletedTicket}>
                     취소
-                  </S.DelBtn>
+                  </S.DelBtn> */}
                   <S.Name>
                     <S.TicketImg src={profileImage} />
                     <S.Btn>{instructor}</S.Btn>

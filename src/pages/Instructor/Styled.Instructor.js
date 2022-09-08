@@ -24,7 +24,7 @@ export const InstructorFlex = styled.div`
   width: 100%;
   /* 병합시 디자인에 따라 수정 */
   margin: 0 auto;
-  margin-left: 7.5rem;
+  margin-left: 8%;
 `;
 
 export const Square = styled.div`

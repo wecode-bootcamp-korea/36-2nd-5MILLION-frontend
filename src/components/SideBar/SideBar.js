@@ -44,6 +44,7 @@ const SideBar = () => {
   const sideMenu = {
     menu: (
       <Menu
+        setOpen={setOpen}
         setShowMode={setShowMode}
         showMode={showMode}
         checkedLogin={checkedLogin}
