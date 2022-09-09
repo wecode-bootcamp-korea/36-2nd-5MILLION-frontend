@@ -1,10 +1,5 @@
 # 5Million
-
-
 --- 
-
-
-##   5Million
 
 ![schedule](https://velog.velcdn.com/images/sharphand1/post/9bfab73f-d9d6-4d9d-b075-7b8ca8ef996c/image.png)
 
@@ -14,19 +9,23 @@
 
 ---
 
-![BODYLIKE ERD](https://velog.velcdn.com/images/sharphand1/post/d4ccf024-a13e-4279-ad1a-63af68b21003/image.jpg)
-
 ### FE
 <table>
   <tr>
     <td>
-    	<img src="https://ca.slack-edge.com/TH0U6FBTN-U03JHPL4GQJ-4d6154be5763-512" width="100px" />
+      <a href="https://github.com/kimjuno97">
+            <img src="https://ca.slack-edge.com/TH0U6FBTN-U03JHPL4GQJ-4d6154be5763-512" width="100px" />
+        </a>
     </td>
     <td>
-    	<img src="https://ca.slack-edge.com/TH0U6FBTN-U03JL5NKCHJ-192f4970c7ed-512" width="100px"/>
+         <a href="https://github.com/strongsongky">
+          	<img src="https://ca.slack-edge.com/TH0U6FBTN-U03JL5NKCHJ-192f4970c7ed-512" width="100px"/>
+        </a>
     </td>
     <td>
-    	<img src="https://ca.slack-edge.com/TH0U6FBTN-U03JHMEQ02X-6cffc3092879-512" width="100px" />
+      <a href="https://github.com/CodyMan0">
+          	<img src="https://ca.slack-edge.com/TH0U6FBTN-U03JHMEQ02X-6cffc3092879-512" width="100px" />
+        </a>
     </td>
   </tr>
   <tr>
@@ -47,10 +46,15 @@
 <table>
   <tr>
     <td>
-    	<img src="https://ca.slack-edge.com/TH0U6FBTN-U03JB5PFMML-843d4de54ab3-512" width="100px" />
+    	 <a href="https://github.com/LeeJ1Hyun">
+          <img src="https://ca.slack-edge.com/TH0U6FBTN-U03JB5PFMML-843d4de54ab3-512" width="100px" />
+        </a>
+
     </td>
     <td>
-    	<img src="https://ca.slack-edge.com/TH0U6FBTN-U03JJUNBB7G-cfc662a4b82c-512" width="100px" />
+       <a href="">
+          <img src="https://ca.slack-edge.com/TH0U6FBTN-U03JJUNBB7G-cfc662a4b82c-512" width="100px" />
+        </a>
     </td>
   </tr>
   <tr>
@@ -108,7 +112,7 @@
 </div>
 
 
-## 💘 구현 API 및 업무 소개  
+## (BE)💘 구현 API 및 업무 소개  
 <br/>### 이솔  
 - Express 초기 세팅  
 - ERD 모델링  
@@ -136,14 +140,20 @@
 - &#128073; [NOTION 페이지 보러가기]([https://www.notion.so/5MILLION-44f8de800da145ecb6304292d14df0e1](https://www.notion.so/5MILLION-44f8de800da145ecb6304292d14df0e1))<br/>**### Mysql ERD**<br/>![5MILLION ERD]([https://velog.velcdn.com/images/nextlinehappy516/post/b1dc6961-8d32-483a-adaf-39baa9dcf28e/image.png](https://velog.velcdn.com/images/nextlinehappy516/post/b1dc6961-8d32-483a-adaf-39baa9dcf28e/image.png))- 5MILLION ERD<br/>**### API 명세서 (POSTMAN)**<br/>![API 명세서]([https://velog.velcdn.com/images/nextlinehappy516/post/83ecbed7-32b8-4c68-bd02-49de5b4c68c1/image.png](https://velog.velcdn.com/images/nextlinehappy516/post/83ecbed7-32b8-4c68-bd02-49de5b4c68c1/image.png))- API 명세서  
 - &#128073; [API 명세서 보러가기]([https://documenter.getpostman.com/view/22697866/VV4xuvL2#0cc2f620-598b-47bb-a228-a5636c2291d8](https://documenter.getpostman.com/view/22697866/VV4xuvL2#0cc2f620-598b-47bb-a228-a5636c2291d8))<br/>
 
-## (FE) Features
+## 💘 (FE) 담당 페이지 소개 
 - 김준호 : 
 - 문경용 : 
-- 이주영 :
+- 이주영 
+  ### 스케줄 예약 페이지
+  #### 필터 기능
+  #### 달력 UI 구현
+  #### 예약 기능
+  
 
 
 ## 팀 프로젝트 노션 링크 
- - [](https://www.notion.so/6-d977ee006c2745fc99ae1f958a07d015)
+ - [5M 노션 페이지로 가기](https://wecode.notion.site/5MILLION-44f8de800da145ecb6304292d14df0e1)
 
 
 ## 2차 프로젝트시 보완할 점 
+- [5M 회고록 보러가기](https://wecode.notion.site/e50db6e5582843dba49c6d3aee6af41a)
