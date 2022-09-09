@@ -41,7 +41,7 @@
   </tr>
 </table>
 
-[36-2nd-frontend](d)
+[36-2nd-frontend](https://github.com/wecode-bootcamp-korea/36-2nd-5MILLION-frontend)
 
 ### BE
 <table>
@@ -63,7 +63,7 @@
   </tr>
 </table>
 
-[36-2nd-backend](h)
+[36-2nd-backend](https://github.com/wecode-bootcamp-korea/36-2nd-5MILLION-backend)
 
 
 ## 프로젝트 소개
@@ -108,8 +108,8 @@
 </div>
 
 
-** 💘 구현 API 및 업무 소개**  
-<br/>**### 이솔**  
+## 💘 구현 API 및 업무 소개  
+<br/>### 이솔  
 - Express 초기 세팅  
 - ERD 모델링  
 - instructors 조회 API (GET)  
@@ -129,6 +129,7 @@
   - 유저가 예약한 classes를 조회<br/>**## 프로젝트  Check point!**  
 <br/>- error handling을 class로 분리하여 서비스 로직단의 코드를 깔끔하게 짜는 것에 집중  
 - 개발한 코드를 테스트하기 위해 end-point마다 매번 Unit Test(단위 테스트)를 작성<br/>**## Back-End 자료**  
+
 <br/>**### 노션 페이지**<br/>![5MILLION NOTION]([https://velog.velcdn.com/images/nextlinehappy516/post/683606f8-d8e1-4316-85e5-5d3d8d7ca756/image.png](https://velog.velcdn.com/images/nextlinehappy516/post/683606f8-d8e1-4316-85e5-5d3d8d7ca756/image.png))- 5MILLION NOTION  
   - tickets 관리  
   - convention 공유  
