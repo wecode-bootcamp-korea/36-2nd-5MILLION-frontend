@@ -111,33 +111,77 @@
 </div>
 
 
-## (BE)💘 구현 API 및 업무 소개  
-<br/>### 이솔  
-- Express 초기 세팅  
-- ERD 모델링  
-- instructors 조회 API (GET)  
-  - limit, offset 을 이용해 페이징 처리  
-- instructors 상세 조회 API (GET)  
-  - Instructor id 를 통해 해당 instructor 상세 페이지 조회 기능 구현  
-  - 에러 메세지를 반환 예외 처리 구현<br/>**### 이지현**  
-- Express 초기 세팅  
-- ERD 모델링  
-- social(카카오) login API (POST)  
-   - [사용자 정보 가져오기 API]([https://developers.kakao.com/docs/latest/ko/kakaologin/rest-api#req-user-info)를](https://developers.kakao.com/docs/latest/ko/kakaologin/rest-api#req-user-info)%EB%A5%BC) 이용하여 axios함수 요청으로 kakao_id를 포함한 유저의 정보를 DB에 등록  
-   - kakao_id를 payload에 담아 5MILLION만의 access_token 발급  
-- schedule 조회 API (GET)  
-  - instructor, classType 조건으로 필터링하여 schedules 조회  
-- class 예약/취소 API (POST/DELETE)  
-- myAccount 조회 API (GET)  
-  - 유저가 예약한 classes를 조회<br/>**## 프로젝트  Check point!**  
-<br/>- error handling을 class로 분리하여 서비스 로직단의 코드를 깔끔하게 짜는 것에 집중  
-- 개발한 코드를 테스트하기 위해 end-point마다 매번 Unit Test(단위 테스트)를 작성<br/>**## Back-End 자료**  
+## (BE)💘 구현 API 및 업무 소개
 
-<br/>**### 노션 페이지**<br/>![5MILLION NOTION]([https://velog.velcdn.com/images/nextlinehappy516/post/683606f8-d8e1-4316-85e5-5d3d8d7ca756/image.png](https://velog.velcdn.com/images/nextlinehappy516/post/683606f8-d8e1-4316-85e5-5d3d8d7ca756/image.png))- 5MILLION NOTION  
-  - tickets 관리  
-  - convention 공유  
-- &#128073; [NOTION 페이지 보러가기]([https://www.notion.so/5MILLION-44f8de800da145ecb6304292d14df0e1](https://www.notion.so/5MILLION-44f8de800da145ecb6304292d14df0e1))<br/>**### Mysql ERD**<br/>![5MILLION ERD]([https://velog.velcdn.com/images/nextlinehappy516/post/b1dc6961-8d32-483a-adaf-39baa9dcf28e/image.png](https://velog.velcdn.com/images/nextlinehappy516/post/b1dc6961-8d32-483a-adaf-39baa9dcf28e/image.png))- 5MILLION ERD<br/>**### API 명세서 (POSTMAN)**<br/>![API 명세서]([https://velog.velcdn.com/images/nextlinehappy516/post/83ecbed7-32b8-4c68-bd02-49de5b4c68c1/image.png](https://velog.velcdn.com/images/nextlinehappy516/post/83ecbed7-32b8-4c68-bd02-49de5b4c68c1/image.png))- API 명세서  
-- &#128073; [API 명세서 보러가기]([https://documenter.getpostman.com/view/22697866/VV4xuvL2#0cc2f620-598b-47bb-a228-a5636c2291d8](https://documenter.getpostman.com/view/22697866/VV4xuvL2#0cc2f620-598b-47bb-a228-a5636c2291d8))<br/>
+### 이솔
+- Express 초기 세팅
+- ERD 모델링
+- instructors 조회 API (GET)
+  - limit, offset 을 이용해 페이징 처리
+- instructors 상세 조회 API (GET)
+  - Instructor id 를 통해 해당 instructor 상세 페이지 조회 기능 구현
+  - 에러 메세지를 반환 예외 처리 구현
+
+<br/>
+
+### 이지현
+- Express 초기 세팅
+- ERD 모델링
+- social(카카오) login API (POST)
+  - [사용자 정보 가져오기 API]([https://developers.kakao.com/docs/latest/ko/kakaologin/rest-api#req-user-info)를](https://developers.kakao.com/docs/latest/ko/kakaologin/rest-api#req-user-info)%EB%A5%BC) 이용하여 axios함수 요청으로 kakao_id를 포함한 유저의 정보를 DB에 등록
+  - kakao_id를 payload에 담아 5MILLION만의 access_token 발급 
+- schedule 조회 API (GET)
+  - instructor, classType 조건으로 필터링하여 schedules 조회
+- class 예약/취소 API (POST/DELETE)
+- myAccount 조회 API (GET)
+  - 유저가 예약한 classes를 조회
+
+<br/>
+
+## 프로젝트  Check point!
+
+- error handling을 class로 분리하여 서비스 로직단의 코드를 깔끔하게 짜는 것에 집중  
+- 개발한 코드를 테스트하기 위해 end-point마다 매번 Unit Test(단위 테스트)를 작성
+
+<br/>
+
+## Back-End 자료
+
+<br/>
+
+### 노션 페이지
+
+<br/>
+
+![5MILLION NOTION](https://velog.velcdn.com/images/nextlinehappy516/post/683606f8-d8e1-4316-85e5-5d3d8d7ca756/image.png)
+
+- 5MILLION NOTION
+  - tickets 관리
+  - convention 공유  
+- &#128073; [NOTION 페이지 보러가기](https://www.notion.so/5MILLION-44f8de800da145ecb6304292d14df0e1)
+
+<br/>
+
+### Mysql ERD
+
+<br/>
+
+![5MILLION ERD](https://velog.velcdn.com/images/nextlinehappy516/post/b1dc6961-8d32-483a-adaf-39baa9dcf28e/image.png)
+
+- 5MILLION ERD
+
+<br/>
+
+### API 명세서 (POSTMAN)
+
+<br/>
+
+![API 명세서](https://velog.velcdn.com/images/nextlinehappy516/post/83ecbed7-32b8-4c68-bd02-49de5b4c68c1/image.png)
+
+- API 명세서  
+- &#128073; [API 명세서 보러가기](https://documenter.getpostman.com/view/22697866/VV4xuvL2#0cc2f620-598b-47bb-a228-a5636c2291d8)
+
+<br/>
 
 ## 💘 (FE) 담당 페이지 소개 
 - 김준호 : 
