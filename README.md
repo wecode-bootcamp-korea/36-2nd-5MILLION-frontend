@@ -52,7 +52,7 @@
 
     </td>
     <td>
-       <a href="">
+       <a href="https://github.com/isol78">
           <img src="https://ca.slack-edge.com/TH0U6FBTN-U03JJUNBB7G-cfc662a4b82c-512" width="100px" />
         </a>
     </td>
@@ -143,11 +143,15 @@
 ## 💘 (FE) 담당 페이지 소개 
 - 김준호 : 
 - 문경용 : 
-- 이주영 
-  ### 스케줄 예약 페이지
-  #### 필터 기능
-  #### 달력 UI 구현
-  #### 예약 기능
+- 이주영 :
+  
+  ### 1. NAV 바 구현
+  
+  ### 2. 스케줄 예약 페이지
+  
+  - #### 필터 기능
+  - #### 달력 UI 구현
+  - #### 예약 기능
   
 
 
@@ -155,5 +159,5 @@
  - [5M 노션 페이지로 가기](https://wecode.notion.site/5MILLION-44f8de800da145ecb6304292d14df0e1)
 
 
-## 2차 프로젝트시 보완할 점 
+## 팀 회고록 
 - [5M 회고록 보러가기](https://wecode.notion.site/e50db6e5582843dba49c6d3aee6af41a)
