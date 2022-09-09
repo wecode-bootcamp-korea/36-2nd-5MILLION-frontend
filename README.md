@@ -49,7 +49,6 @@
     	 <a href="https://github.com/LeeJ1Hyun">
           <img src="https://ca.slack-edge.com/TH0U6FBTN-U03JB5PFMML-843d4de54ab3-512" width="100px" />
         </a>
-
     </td>
     <td>
        <a href="https://github.com/isol78">
